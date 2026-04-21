@@ -1,0 +1,86 @@
+.auth-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  animation: fadeIn 0.3s ease;
+}
+
+.auth-subtitle {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.auth-toggle {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.toggle-btn {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.toggle-btn:hover {
+  color: var(--text-main);
+}
+
+.account-details {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  animation: fadeIn 0.3s ease;
+}
+
+.welcome-text p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.welcome-text h3 {
+  font-size: 2rem;
+  color: var(--text-main);
+}
+
+.account-links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.account-link {
+  text-align: left;
+  padding: 15px 0;
+  border-bottom: 1px solid var(--border-color);
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--text-main);
+}
+
+.account-link:hover {
+  color: var(--accent-gold);
+  border-bottom-color: var(--accent-gold);
+}
+
+.account-link::after {
+  content: "→";
+  font-size: 1.2rem;
+}
+
+.logout-btn {
+  margin-top: auto;
+  width: 100%;
+}

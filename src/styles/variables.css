@@ -1,0 +1,105 @@
+:root {
+  /* Colors - Light Theme (Default) */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f9f9f7;
+  --bg-soft: #f4f4f2;
+  --text-main: #1a1a1a;
+  --text-muted: #666666;
+  --accent-gold: #c5a059;
+  --accent-rose: #fce4ec;
+  --border-color: #e0e0e0;
+  
+  /* Typography */
+  --font-serif: 'Playfair Display', serif;
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  
+  /* Transitions */
+  --transition-smooth: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --transition-fast: all 0.2s ease;
+  
+  /* Shadows */
+  --shadow-subtle: 0 4px 20px rgba(0, 0, 0, 0.05);
+  --shadow-hover: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme='warm'] {
+  --bg-primary: #fdfaf5;
+  --bg-secondary: #f5f1e9;
+  --bg-soft: #ede7db;
+  --text-main: #2a2a2a;
+  --accent-gold: #b38f4d;
+}
+
+[data-theme='soft-pink'] {
+  --bg-primary: #fff9f9;
+  --bg-secondary: #fef0f0;
+  --bg-soft: #fde2e2;
+  --text-main: #332d2d;
+  --accent-gold: #d4a5a5;
+}
+
+[data-theme='minimal-dark'] {
+  --bg-primary: #121212;
+  --bg-secondary: #1e1e1e;
+  --bg-soft: #252525;
+  --text-main: #ffffff;
+  --text-muted: #a0a0a0;
+  --border-color: #333333;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-primary);
+  color: var(--text-main);
+  line-height: 1.6;
+  overflow-x: hidden;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+h1, h2, h3, .serif {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+  transition: var(--transition-fast);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition-fast);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent-gold);
+  border-radius: 10px;
+}

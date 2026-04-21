@@ -1,0 +1,78 @@
+.product-grid-section {
+  padding: 100px 10%;
+  background: var(--bg-primary);
+}
+
+.section-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+  gap: 30px;
+}
+
+.section-header h2 {
+  font-size: 2.5rem;
+}
+
+.filters {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.filter-btn {
+  padding: 8px 20px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border: 1px solid transparent;
+  color: var(--text-muted);
+}
+
+.filter-btn.active {
+  color: var(--text-main);
+  border-bottom: 1px solid var(--accent-gold);
+}
+
+.search-bar {
+  width: 100%;
+  max-width: 400px;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid var(--border-color);
+  background: transparent;
+  font-family: var(--font-sans);
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--text-main);
+}
+
+.search-bar input:focus {
+  outline: none;
+  border-color: var(--accent-gold);
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 40px;
+}
+
+.no-results {
+  text-align: center;
+  padding: 50px 0;
+  font-style: italic;
+  opacity: 0.6;
+}
+
+@media (max-width: 768px) {
+  .product-grid-section {
+    padding: 60px 5%;
+  }
+}
