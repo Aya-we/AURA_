@@ -92,6 +92,9 @@
 @media (max-width: 768px) {
   .menu-btn {
     display: block;
+    background: transparent;
+    border: none;
+    color: var(--text-main);
   }
   
   .nav-links {
@@ -111,5 +114,18 @@
   
   .nav-links.active {
     height: calc(100vh - 80px);
+  }
+
+  .nav-actions {
+    gap: 10px;
+  }
+
+  .nav-logo a {
+    margin-left: 0;
+    font-size: 1.5rem;
+  }
+
+  .nav-icon-btn {
+    padding: 4px;
   }
 }
